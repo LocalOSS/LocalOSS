@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: local-oss
+  profiles:
+    active: dev
+  servlet:
+    multipart:
+      max-file-size: -1
+      max-request-size: -1
+server:
+  port: 8080
+  forward-headers-strategy: framework
+  tomcat:
+    max-swallow-size: -1
+    max-http-form-post-size: -1
+    max-http-header-size: 64KB
+
+system:
+  data-path: /opt/file/data/
+  region: us-east-1
+  access-mode: read-write

@@ -1,0 +1,6 @@
+system:
+  data-path: ${OSS_DATA_PATH:/opt/file/data/}
+  region: us-east-1
+  access-mode: ${OSS_ACCESS_MODE:read-write}
+  access-key: ${OSS_ACCESS_KEY:}
+  secret-key: ${OSS_SECRET_KEY:}
